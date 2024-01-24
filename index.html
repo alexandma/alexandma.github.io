@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madeleine Alexander</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Update the path to your favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon for the browser's menu bar -->
     <style>
         /* CSS styles */
         body {
@@ -43,6 +43,45 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Added styles for the footer content */
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-location,
+        .footer-linkedin,
+        .footer-email,
+        .footer-phone,
+        .footer-github {
+            flex: 1;
+            text-align: center;
+        }
+
+        .footer-linkedin a,
+        .footer-email a,
+        .footer-phone {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .footer-linkedin strong,
+        .footer-email strong,
+        .footer-phone strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Added styles for the skills section */
+        .skills-section {
+            text-align: left;
+        }
+
+        .skills-subsection {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -57,26 +96,53 @@
 
     <div id="home" class="section">
         <h1>Madeleine Alexander</h1>
-        <p>Second-year Computer Science student at the University of Toronto.</p>
+        <p>Second-year student at the University of Toronto.</p>
     </div>
 
     <div id="about" class="section">
         <h2>About Me</h2>
-        <p>Information about yourself, your background, experience, etc.</p>
+        <p>Co-op student studying Computer Science, with minors in Math and Physics.</p>
+        <div class="skills-section">
+            <div class="skills-subsection">
+                <strong>Technical Skills:</strong> Python, C, Java, Javascript, Git, R, HTML, CSS.
+            </div>
+            <div class="skills-subsection">
+                <strong>Languages:</strong> English, French.
+            </div>
+            <p>More coming soon!</p>
+        </div>
     </div>
 
     <div id="portfolio" class="section">
         <h2>Portfolio</h2>
-        <p>Details of your projects, work, or anything relevant.</p>
+        <p>Coming soon!</p>
     </div>
 
     <div id="contact" class="section">
         <h2>Contact</h2>
-        <p>Your contact information or a form for people to reach you.</p>
+        <div class="footer-linkedin">
+            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexandermadeleine/" target="_blank">linkedin.com/in/alexandermadeleine/</a>
+        </div>
+        <div class="footer-email">
+            <strong>Email:</strong> <a href="mailto:madeleine.alexander@mail.utoronto.ca">madeleine.alexander@mail.utoronto.ca</a>
+        </div>
+        <div class="footer-phone">
+            <strong>Phone:</strong> 289-214-2557
+        </div>
     </div>
 
     <div class="footer">
-        <p>Footer content like copyright notice, social media links, etc.</p>
+        <div class="footer-content">
+            <div class="footer-location">
+                <strong>Location:</strong> Toronto, ON
+            </div>
+            <div class="footer-github">
+                <strong>GitHub:</strong> <a href="https://github.com/alexandma" target="_blank">https://github.com/alexandma</a>
+            </div>
+            <div class="footer-email">
+                <strong>Email:</strong> <a href="mailto:madeleine.alexander@mail.utoronto.ca">madeleine.alexander@mail.utoronto.ca</a>
+            </div>
+        </div>
     </div>
 
     <script>
