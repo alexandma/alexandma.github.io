@@ -31,6 +31,11 @@
             display: inline-block;
         }
 
+        .navbar img {
+            height: 30px; /* Adjust the height of the image as needed */
+            margin-right: 10px; /* Add some right margin to separate the image from text */
+        }
+
         .section {
             padding: 20px;
             min-height: 400px;
@@ -57,19 +62,21 @@
         .footer-phone,
         .footer-github {
             flex: 1;
-            text-align: center;
+            text-align: left; /* Updated to left-align text in the footer */
         }
 
         .footer-linkedin a,
         .footer-email a,
-        .footer-phone {
-            color: white;
+        .footer-phone,
+        .footer-github a {
+            color: white; /* Updated color to white for better visibility */
             text-decoration: underline;
         }
 
         .footer-linkedin strong,
         .footer-email strong,
-        .footer-phone strong {
+        .footer-phone strong,
+        .footer-github strong {
             display: block;
             margin-bottom: 5px;
         }
@@ -88,6 +95,7 @@
 <body>
 
     <div class="navbar">
+        <img src="images/logo.png" alt="Logo"> <!-- Display logo.png in the top left corner -->
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
@@ -96,12 +104,12 @@
 
     <div id="home" class="section">
         <h1>Madeleine Alexander</h1>
-        <p>Second-year student at the University of Toronto.</p>
+        <p>Second-year student at the University of Toronto 🌊</p>
     </div>
 
     <div id="about" class="section">
         <h2>About Me</h2>
-        <p>Co-op student studying Computer Science, with minors in Math and Physics.</p>
+        <p>I am a Co-op student studying Computer Science, with minors in Math and Physics.</p>
         <div class="skills-section">
             <div class="skills-subsection">
                 <strong>Technical Skills:</strong> Python, C, Java, Javascript, Git, R, HTML, CSS.
