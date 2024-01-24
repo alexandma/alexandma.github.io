@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madeleine Alexander</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Update the path to your favicon -->
     <style>
         /* CSS styles */
         body {
@@ -32,8 +33,8 @@
         .section {
             padding: 20px;
             min-height: 400px;
-            opacity: 0; /* Initially set opacity to 0 */
-            transition: opacity 1s ease; /* Add a smooth transition */
+            opacity: 0;
+            transition: opacity 1s ease;
         }
 
         .footer {
@@ -93,6 +94,8 @@
                 sections.forEach(function (section) {
                     if (checkVisible(section)) {
                         section.style.opacity = 1;
+                    } else {
+                        section.style.opacity = 0;
                     }
                 });
             }
