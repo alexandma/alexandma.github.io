@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Madeleine Alexander</title>
     <style>
         /* CSS styles */
         body {
@@ -12,22 +13,29 @@
             padding: 0;
             box-sizing: border-box;
         }
-        .navbar, .footer {
-            background-color: pink; /* Pink color for navbar and footer */
+
+        .navbar,
+        .footer {
+            background-color: pink;
             color: white;
             text-align: center;
             padding: 15px;
         }
+
         .navbar a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
             display: inline-block;
         }
+
         .section {
             padding: 20px;
-            min-height: 400px; /* Minimum height for each section */
+            min-height: 400px;
+            opacity: 0; /* Initially set opacity to 0 */
+            transition: opacity 1s ease; /* Add a smooth transition */
         }
+
         .footer {
             position: fixed;
             bottom: 0;
@@ -35,6 +43,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="navbar">
@@ -46,7 +55,7 @@
 
     <div id="home" class="section">
         <h1>Madeleine Alexander</h1>
-        <p>Second year Computer Science student at the University of Toronto.</p>
+        <p>Second-year Computer Science student at the University of Toronto.</p>
     </div>
 
     <div id="about" class="section">
@@ -68,5 +77,33 @@
         <p>Footer content like copyright notice, social media links, etc.</p>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var sections = document.querySelectorAll(".section");
+
+            function checkVisible(element) {
+                var rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            }
+
+            function handleScroll() {
+                sections.forEach(function (section) {
+                    if (checkVisible(section)) {
+                        section.style.opacity = 1;
+                    }
+                });
+            }
+
+            // Initial check on page load
+            handleScroll();
+
+            // Add scroll event listener
+            window.addEventListener("scroll", handleScroll);
+        });
+    </script>
 </body>
+
 </html>
