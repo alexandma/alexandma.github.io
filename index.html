@@ -14,6 +14,7 @@
             padding: 0;
             box-sizing: border-box;
             background-color: #f0f8ff; /* Light blue background for the entire page */
+            color: #000; /* Black text color */
         }
 
         .navbar,
@@ -50,50 +51,23 @@
             width: 100%;
         }
 
-        /* Added styles for the footer content */
+        /* Added styles for footer content */
         .footer-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0 20px; /* Added padding to the footer content */
         }
 
-        .footer-linkedin,
-        .footer-email,
-        .footer-phone,
-        .footer-github {
+        .footer-location,
+        .footer-email {
             flex: 1;
-            text-align: left; /* Updated to left-align text in the footer */
+            text-align: left; /* Left-align text in the footer */
         }
 
-        .footer-linkedin a,
-        .footer-email a,
-        .footer-github a {
-            color: white; /* Updated color to white for better visibility */
+        .footer-email a {
+            color: white; /* White color for email link */
             text-decoration: underline;
-        }
-
-        .footer-linkedin strong,
-        .footer-email strong,
-        .footer-github strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .footer-phone,
-        .footer-phone strong {
-            text-decoration: none; /* Remove underline for "Phone" */
-            color: white; /* Keep the color white */
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Added styles for the skills section */
-        .skills-section {
-            text-align: left;
-        }
-
-        .skills-subsection {
-            margin-top: 10px;
         }
     </style>
 </head>
@@ -135,20 +109,10 @@
 
     <div id="contact" class="section">
         <h2>Contact</h2>
-        <div class="footer-location">
-            Toronto, ON
-        </div>
-        <div class="footer-linkedin">
-            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/alexandermadeleine/" target="_blank">LinkedIn</a>
-        </div>
-        <div class="footer-email">
-            <strong>Email:</strong> <a href="mailto:madeleine.alexander@mail.utoronto.ca">Email</a>
-        </div>
-        <div class="footer-phone">
-            <strong>Phone:</strong> 289-214-2557
-        </div>
-        <div class="footer-github">
-            <strong>GitHub:</strong> <a href="https://github.com/alexandma" target="_blank">GitHub</a>
+        <div class="contact-info">
+            <div class="footer-email">
+                <strong>Email:</strong> <a href="mailto:madeleine.alexander@mail.utoronto.ca">madeleine.alexander@mail.utoronto.ca</a>
+            </div>
         </div>
     </div>
 
@@ -156,9 +120,6 @@
         <div class="footer-content">
             <div class="footer-location">
                 Toronto, ON
-            </div>
-            <div class="footer-github">
-                <strong>GitHub:</strong> <a href="https://github.com/alexandma" target="_blank">GitHub</a>
             </div>
             <div class="footer-email">
                 <strong>Email:</strong> <a href="mailto:madeleine.alexander@mail.utoronto.ca">Email</a>
